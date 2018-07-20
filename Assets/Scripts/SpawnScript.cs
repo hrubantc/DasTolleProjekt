@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour {
 
 
-    public GameObject prefab;
+    public GameObject[] prefabs;
     public float intervalInSeconds = 0.1f;
 
     Transform myTransform;
@@ -19,14 +19,12 @@ public class SpawnScript : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("You are crazy!");
             SpawnPrefab();
         }
 	}
 
     public void SpawnPrefab()
     {
-        Vector3 offset = new Vector3(Random.Range(1f, 5f), Random.Range(1f, 5f), Random.Range(1f, 5f));
-        Instantiate(prefab, myTransform.position + offset, myTransform.rotation);
+        Instantiate(prefabs[Random.Range(0, prefabs.Length)], myTransform.position, myTransform.rotation);
     }
 }
