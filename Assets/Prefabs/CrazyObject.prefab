@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 54049376814086140}
   - component: {fileID: 135984193326924908}
   - component: {fileID: 114142576551591496}
-  - component: {fileID: 114460489488555610}
   m_Layer: 0
   m_Name: CrazyObject
   m_TagString: Untagged
@@ -158,19 +157,6 @@ MonoBehaviour:
   pauseInterval: 0
   pauseLength: 0
   randomPauses: 0
---- !u!114 &114460489488555610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983062154325650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9eaeae1124984e4784d6d674c78cd81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1983062154325650}
-  intervalInSeconds: 0.1
 --- !u!135 &135984193326924908
 SphereCollider:
   m_ObjectHideFlags: 1

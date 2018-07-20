@@ -15,13 +15,13 @@ public class sebnesCubeMovement : MonoBehaviour {
 	void Update ()
     {
         float yTranslation = Input.GetAxis("Vertical") * speed;
-        float xTranslation = Input.GetAxis("Vertical") * speed;
+        float xTranslation = Input.GetAxis("Horizontal") * speed;
 
         yTranslation *= Time.deltaTime;
         xTranslation *= Time.deltaTime;
 
 
-        transform.Translate(0, 0, xTranslation);
-        transform.Translate(0, 0, yTranslation);
+        transform.Translate(xTranslation, yTranslation, 0);
+        
     }
 }

@@ -24,7 +24,11 @@ GameObject:
   - component: {fileID: 65803850418573162}
   - component: {fileID: 114706987046067242}
   - component: {fileID: 114222772394737668}
+<<<<<<< HEAD
   - component: {fileID: 54330010433428986}
+=======
+  - component: {fileID: 54624426897108518}
+>>>>>>> bb37bf5d72bafe5c670cd3d8828cc16358a3ec74
   m_Layer: 0
   m_Name: TestCube
   m_TagString: Untagged
@@ -87,7 +91,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1287548347596186}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!54 &54330010433428986
+=======
+--- !u!54 &54624426897108518
+>>>>>>> bb37bf5d72bafe5c670cd3d8828cc16358a3ec74
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
