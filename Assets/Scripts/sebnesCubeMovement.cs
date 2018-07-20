@@ -14,11 +14,14 @@ public class sebnesCubeMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
+        float yTranslation = Input.GetAxis("Vertical") * speed;
+        float xTranslation = Input.GetAxis("Vertical") * speed;
 
-        translation *= Time.deltaTime;     
+        yTranslation *= Time.deltaTime;
+        xTranslation *= Time.deltaTime;
 
-        
-        transform.Translate(0, 0, translation);
+
+        transform.Translate(0, 0, xTranslation);
+        transform.Translate(0, 0, yTranslation);
     }
 }
