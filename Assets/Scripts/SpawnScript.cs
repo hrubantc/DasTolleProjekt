@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour {
 
 
-    public GameObject prefab;
+    public GameObject[] prefabs;
     public float intervalInSeconds = 0.1f;
 
     Transform myTransform;
@@ -25,6 +25,6 @@ public class SpawnScript : MonoBehaviour {
 
     public void SpawnPrefab()
     {
-        Instantiate(prefab, myTransform.position, myTransform.rotation);
+        Instantiate(prefabs[Random.Range(0, prefabs.Length)], myTransform.position, myTransform.rotation);
     }
 }
