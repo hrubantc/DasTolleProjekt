@@ -18,6 +18,6 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector3(Random.Range(-10f, 10f), Random.Range(-5f, 5f), 0f);
+        rb.velocity = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
     }
 }
