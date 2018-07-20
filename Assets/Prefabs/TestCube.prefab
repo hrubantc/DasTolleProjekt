@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseInterval: 1
   pauseLength: 1
+  randomPauses: 0
 --- !u!114 &114706987046067242
 MonoBehaviour:
   m_ObjectHideFlags: 1
