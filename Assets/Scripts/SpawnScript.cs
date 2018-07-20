@@ -26,6 +26,7 @@ public class SpawnScript : MonoBehaviour {
 
     public void SpawnPrefab()
     {
-        Instantiate(prefab, myTransform.position, myTransform.rotation);
+        Vector3 offset = new Vector3(Random.Range(1f, 5f), Random.Range(1f, 5f), Random.Range(1f, 5f));
+        Instantiate(prefab, myTransform.position + offset, myTransform.rotation);
     }
 }
