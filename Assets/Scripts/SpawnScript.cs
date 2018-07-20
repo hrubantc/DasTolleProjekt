@@ -25,7 +25,6 @@ public class SpawnScript : MonoBehaviour {
 
     public void SpawnPrefab()
     {
-
         Instantiate(prefabs[Random.Range(0, prefabs.Length)], myTransform.position, myTransform.rotation);
     }
 }
